@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient( to right bottom, rgba(102,34,51,1) 0%, rgba(0,0,0,1) 100.3% );" type="BorderPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox spacing="5.0">
+               <children>
+                  <Label text="TextField 1" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt1" prefHeight="35.0" prefWidth="300.0" promptText="Enter Text" style="-fx-background-radius: 7;">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox spacing="5.0">
+               <children>
+                  <Label text="TextField 2" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt2" prefHeight="35.0" prefWidth="300.0" promptText="Enter Text" style="-fx-background-radius: 7;">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="35.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Sample Project" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="71.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: linear-gradient( to right bottom,  rgba(144,17,105,1) 0%, rgba(51,0,131,1) 100.2% ); -fx-background-radius: 10px;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</fx:root>
